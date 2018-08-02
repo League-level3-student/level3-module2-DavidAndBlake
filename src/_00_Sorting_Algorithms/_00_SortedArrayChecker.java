@@ -41,15 +41,29 @@ public class _00_SortedArrayChecker {
 	}
 
 	static boolean doubleArraySorted(double[] doubles) {
+		for (int i = 0; i < doubles.length; i++) {
+			if (doubles[i] > doubles[i + 1]) {
+				return false;
+			}
+		}
 		return true;
 	}
 
 	static boolean charArraySorted(char[] chars) {
+		for (int i = 0; i < chars.length; i++) {
+			if (chars[i] > chars[i + 1]) {
+				return false;
+			}
+		}
 		return true;
 	}
 
-	static void stringArraySorted(String[] strings) {
-
+	static boolean stringArraySorted(String[] strings) {
+		for (int i = 0; i < strings.length; i++) {
+			if (strings[i].compareTo(strings[i + 1]) < 0) {
+				return false;
+			}
+		}
+		return true;
 	}
-
 }
