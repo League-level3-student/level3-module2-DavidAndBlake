@@ -32,7 +32,7 @@ public class _00_SortedArrayChecker {
 	}
 
 	static boolean intArraySorted(int[] ints) {
-		for (int i = 0; i < ints.length; i++) {
+		for (int i = 0; i < ints.length-1; i++) {
 			if (ints[i] > ints[i + 1]) {
 				return false;
 			}
@@ -41,7 +41,7 @@ public class _00_SortedArrayChecker {
 	}
 
 	static boolean doubleArraySorted(double[] doubles) {
-		for (int i = 0; i < doubles.length; i++) {
+		for (int i = 0; i < doubles.length-1; i++) {
 			if (doubles[i] > doubles[i + 1]) {
 				return false;
 			}
@@ -50,7 +50,7 @@ public class _00_SortedArrayChecker {
 	}
 
 	static boolean charArraySorted(char[] chars) {
-		for (int i = 0; i < chars.length; i++) {
+		for (int i = 0; i < chars.length-1; i++) {
 			if (chars[i] > chars[i + 1]) {
 				return false;
 			}
@@ -59,8 +59,8 @@ public class _00_SortedArrayChecker {
 	}
 
 	static boolean stringArraySorted(String[] strings) {
-		for (int i = 0; i < strings.length; i++) {
-			if (strings[i].compareTo(strings[i + 1]) < 0) {
+		for (int i = 0; i < strings.length-1; i++) {
+			if (strings[i].compareTo(strings[i + 1]) > 0) {
 				return false;
 			}
 		}
