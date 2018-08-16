@@ -38,7 +38,11 @@ public class BogoSorter extends Sorter {
 			int r1 = new Random().nextInt(array.length);
 			int r2 = new Random().nextInt(array.length);
 			int temp; // need to make two more variables called array[r1] & array[r2] to swap digits in the array
+			temp = array[r1];
+			array[r1] = array[r2];
+			array[r2] = temp;
 		}
+		display.updateDisplay();
 		}
 	}
 }
