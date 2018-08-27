@@ -15,13 +15,25 @@ public class InsertionSorter extends Sorter {
 		
 		for(int i = 1; i < array.length; i++)
 		{
-			
+			for(int j = i; j > 0; j--) {
+				if (array[j]<array[j-1]) {
+					int temp = array[j-1];
+					array[j-1] = array[j];
+					array[j] = temp;
+					
+				}
+				
+			}
+			display.updateDisplay();
 		}
+		
 
 			//2. make another for loop that starts at i and counts down
         	//   while j is greater than 0
+		
 
 				//3. if the element at j is less than the element at j - 1,
             	//   then swap them
 	}
+	//COMPLETED
 }
