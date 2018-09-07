@@ -10,6 +10,9 @@ class _04_SearchTest {
 	
 	@Test
 	void testLinearSearch() {
+		int[] test = {3, 2, 5, 23};
+		_00_linearSearch() ls = new_0;
+		assertEquals(test[0] = 3, test[3] = 2);
 		//1. use the assertEquals method to test your linear search method.
 	}
 
