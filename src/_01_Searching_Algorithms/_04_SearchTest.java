@@ -10,9 +10,10 @@ class _04_SearchTest {
 	
 	@Test
 	void testLinearSearch() {
-		int[] test = {3, 2, 5, 23};
-		_00_linearSearch() ls = new_0;
-		assertEquals(test[0] = 3, test[3] = 2);
+		String[] test = {"Count Bleck", "Count Olaf", "Count Dracula"};
+		_00_LinearSearch.linearSearch(test, "1");
+		assertEquals(test[0], "Count Bleck");
+		assertEquals(test[2], "Count Dracula");
 		//1. use the assertEquals method to test your linear search method.
 	}
 
@@ -20,6 +21,7 @@ class _04_SearchTest {
 	void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
+	int[] array = {2, 3, 5, 9};
 	}
 	
 	@Test
