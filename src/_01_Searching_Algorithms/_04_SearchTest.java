@@ -1,6 +1,6 @@
 package _01_Searching_Algorithms;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
@@ -28,11 +28,15 @@ class _04_SearchTest {
 	void testInterpolationSearch() {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
+		int[] test = {4,13,22,31};
+		_02_InterpolationSearch.interpolationSearch(test, 13);
+		assertEquals();
 	}
 	
 	@Test
 	void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		
 	}
 }

@@ -46,9 +46,10 @@ while (start <= end && value >= array[start] && value <= array[end])
             else
             {
             	end = position - 1;
-            }
+            }}
         //8. Return -1 because the value was not found
         return -1;
-    }
+    
+
 }
 }
