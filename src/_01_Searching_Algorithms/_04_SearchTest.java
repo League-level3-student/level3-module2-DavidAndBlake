@@ -12,8 +12,9 @@ class _04_SearchTest {
 	void testLinearSearch() {
 		String[] test = {"Count Bleck", "Count Olaf", "Count Dracula"};
 		_00_LinearSearch.linearSearch(test, "1");
-		assertEquals(test[0], "Count Bleck");
-		assertEquals(test[2], "Count Dracula");
+		assertEquals(-1, _00_LinearSearch.linearSearch(test, "1"));
+		assertEquals(0, _00_LinearSearch.linearSearch(test, "Count Bleck"));
+		assertEquals(2, _00_LinearSearch.linearSearch(test, "Count Dracula"));
 		//1. use the assertEquals method to test your linear search method.
 	}
 
@@ -21,7 +22,8 @@ class _04_SearchTest {
 	void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
-	int[] array = {2, 3, 5, 9};
+	int[] array = {2, 3, 5, 8};
+	
 	}
 	
 	@Test
@@ -30,7 +32,7 @@ class _04_SearchTest {
 		//   remember that the array must be sorted and evenly distributed
 		int[] test = {4,13,22,31};
 		_02_InterpolationSearch.interpolationSearch(test, 13);
-		assertEquals();
+//		assertEquals();
 	}
 	
 	@Test
