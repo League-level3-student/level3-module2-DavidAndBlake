@@ -22,8 +22,8 @@ class _04_SearchTest {
 	void testBinarySearch() {
 		//2. use the assertEquals method to test your binary search method.
 		//   remember that the array must be sorted
-	int[] array = {2, 3, 5, 8};
-	
+	int[] array = {2, 3, 4, 5};
+	assertEquals(1, _01_BinarySearch.binarySearch(array,0,array.length-1,3));
 	}
 	
 	@Test
@@ -31,8 +31,8 @@ class _04_SearchTest {
 		//3. use the assertEquals method to test your interpolation search method.
 		//   remember that the array must be sorted and evenly distributed
 		int[] test = {4,13,22,31};
-		_02_InterpolationSearch.interpolationSearch(test, 13);
-//		assertEquals();
+		assertEquals(1, _02_InterpolationSearch.interpolationSearch(test,13));
+		
 	}
 	
 	@Test

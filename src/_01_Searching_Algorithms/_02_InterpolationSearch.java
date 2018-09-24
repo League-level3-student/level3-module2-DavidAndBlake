@@ -50,6 +50,6 @@ while (start <= end && value >= array[start] && value <= array[end])
         //8. Return -1 because the value was not found
         return -1;
     
-
+//FINISHED
 }
 }
