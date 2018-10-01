@@ -19,15 +19,17 @@ public class _01_SearchingAndSortingAlgorithms {
 		List<String> eggs = Arrays.asList(new String[] { "whole", "whole", "whole", "whole", "cracked", "whole", "whole", "whole",
 				"cracked", "whole", "whole", "whole" });
 		assertEquals(4, Algorithms.findBrokenEgg(eggs));
+		
+		}
 	}
 
 	/* 2. Count how many oysters contain pearls. */
 //	@Test
-//	public void testSearchAndAccumulate() throws Exception {
-//		List<Boolean> oysters = Arrays.asList(new Boolean[] { false, false, true, false, false, false, false, false, false, false, false,
-//				false, false, false, false, false, false, false, false, false, false, false, false, true });
-//		assertEquals(2, Algorithms.countPearls(oysters));
-//	}
+	public void testSearchAndAccumulate() throws Exception {
+		List<Boolean> oysters = Arrays.asList(new Boolean[] { false, false, true, false, false, false, false, false, false, false, false,
+				false, false, false, false, false, false, false, false, false, false, false, false, true });
+		assertEquals(2, Algorithms.countPearls(oysters));
+	}
 
 	/* 3. Create a method that will return the height of the tallest person. */
 //	@Test
@@ -94,4 +96,3 @@ public class _01_SearchingAndSortingAlgorithms {
 //		assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
 //	}
 
-}

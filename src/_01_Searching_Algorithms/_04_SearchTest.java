@@ -40,6 +40,6 @@ class _04_SearchTest {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
 		int[] test = {3, 6, 9, 113, 344};
-		assertEquals(3, _03_ExponentialSearch.exponentialSearch(test, 113));
+		assertEquals(1, _03_ExponentialSearch.exponentialSearch(test, 6));
 	}
 }
