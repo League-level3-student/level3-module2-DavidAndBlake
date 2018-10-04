@@ -16,9 +16,10 @@ public class Algorithms {
 		int numberOfPearls = 0;
 		for (int i = 0; i < oysters.size(); i++)
 		{
-			if(oysters[i] = true) {
+			if(oysters.get(i) == true) {
 				numberOfPearls+=1;
 			}
 		}
+		return numberOfPearls;
 	}
 }
