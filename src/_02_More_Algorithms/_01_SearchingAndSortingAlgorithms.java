@@ -40,15 +40,18 @@ public class _01_SearchingAndSortingAlgorithms {
 
 	/* 4. Create a method that will find the longest word. */
 //	@Test
-//	public void testFindMaxiumumString() throws Exception {
-//		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
-//				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
-//				"ebullient", "equanimity", "excogitate", "gasconading", "idiosyncratic", "luminescent", "magnanimous", "nidificate",
-//				"osculator", "parsimonious", "penultimate", "perfidiousness", "perspicacious", "proficuous", "remunerative", "saxicolous",
-//				"sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct", });
-//		assertEquals("circumlocution", Algorithms.findLongestWord(words));
-//	}
-
+	public void testFindMaxiumumString() throws Exception {
+		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
+				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
+				"ebullient", "equanimity", "excogitate", "gasconading", "idiosyncratic", "luminescent", "magnanimous", "nidificate",
+				"osculator", "parsimonious", "penultimate", "perfidiousness", "perspicacious", "proficuous", "remunerative", "saxicolous",
+				"sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct", });
+		assertEquals("circumlocution", Algorithms.findLongestWord(words));
+	}
+//3 & 4 NOT COMPLETED CORRECTLY!!!
+	
+	
+	
 	/*
 	 * 5. The Morse code for SOS is "... --- ..."
 	 * Create a method that can tell if SOS is contained in a message.

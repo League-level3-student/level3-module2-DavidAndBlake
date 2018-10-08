@@ -11,15 +11,40 @@ public class Algorithms {
 		}
 		return -1;
 	}
-	
+
 	public static int countPearls(List<Boolean> oysters) {
 		int numberOfPearls = 0;
-		for (int i = 0; i < oysters.size(); i++)
-		{
-			if(oysters.get(i) == true) {
-				numberOfPearls+=1;
+		for (int i = 0; i < oysters.size(); i++) {
+			if (oysters.get(i) == true) {
+				numberOfPearls += 1;
 			}
 		}
 		return numberOfPearls;
 	}
+
+	public static double findTallest(List<Double> peeps) {
+		double tallest = 0;
+		for (int i = 0; i < peeps.size(); i++) {
+			if (i > 0) {
+				if (peeps.get(i) > peeps.get(i - 1)) {
+					tallest = peeps.get(i);
+				}
+			}
+		}
+		return tallest;
+	}
+	//need to fix next time 
+
+	public static Object findLongestWord(List<String> words) {
+		String longestWord = new String();
+		for (int i = 0; i < words.size(); i++) {
+			if (i > 0) {
+				if (words.get(i).length() > words.get(i - 1).length()) {
+					longestWord = words.get(i);
+				}
+			}
+		}
+		return longestWord;
+	}
+
 }
