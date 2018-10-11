@@ -44,4 +44,9 @@ public class Algorithms {
 		return longestWord;
 	}
 
+	public static Object containsSOS(List<String> message1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
