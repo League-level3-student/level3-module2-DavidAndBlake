@@ -39,7 +39,7 @@ public class _01_SearchingAndSortingAlgorithms {
 	}
 
 	/* 4. Create a method that will find the longest word. */
-//	@Test
+	@Test
 	public void testFindMaxiumumString() throws Exception {
 		List<String> words = Arrays.asList(new String[] { "accoutrements", "acumen", "anomalistic", "auspicious", "bellwether",
 				"callipygian", "circumlocution", "concupiscent", "conviviality", "coruscant", "cuddlesome", "cupidity", "cynosure",
@@ -48,7 +48,7 @@ public class _01_SearchingAndSortingAlgorithms {
 				"sesquipedalian", "superabundant", "unencumbered", "unparagoned", "usufruct", });
 		assertEquals("circumlocution", Algorithms.findLongestWord(words));
 	}
-//3 & 4 NOT COMPLETED CORRECTLY!!!
+
 	
 	
 	

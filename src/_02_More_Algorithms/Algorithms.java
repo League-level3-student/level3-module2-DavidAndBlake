@@ -25,12 +25,11 @@ public class Algorithms {
 	public static double findTallest(List<Double> peeps) {
 		double tallest = 0;
 		for (int i = 0; i < peeps.size(); i++) {
-			if (i > 0) {
-				if (peeps.get(i) > peeps.get(i - 1)) {
+			
+				if (peeps.get(i) > tallest) {
 					tallest = peeps.get(i);
-				}
 			}
-		}
+					}
 		return tallest;
 	}
 	//need to fix next time 
@@ -38,10 +37,8 @@ public class Algorithms {
 	public static Object findLongestWord(List<String> words) {
 		String longestWord = new String();
 		for (int i = 0; i < words.size(); i++) {
-			if (i > 0) {
-				if (words.get(i).length() > words.get(i - 1).length()) {
+				if (words.get(i).length() > longestWord.length()) {
 					longestWord = words.get(i);
-				}
 			}
 		}
 		return longestWord;
