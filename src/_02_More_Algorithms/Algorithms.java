@@ -45,7 +45,22 @@ public class Algorithms {
 	}
 
 	public static Object containsSOS(List<String> message1) {
-		// TODO Auto-generated method stub
+		for (int i = 0; i < message1.size(); i++) {
+			if(message1.get(i).contains("... --- ...")) {
+				return true;
+		}
+			
+		}
+		return false;
+	}
+
+	public static List<String> sortScores(List<Double> results) {
+		double lowest = 0;
+		for (int i = 0; i < results.size(); i++) {
+			if (results.get(i) < lowest) {
+				lowest = results.get(i);
+			}
+		}
 		return null;
 	}
 
