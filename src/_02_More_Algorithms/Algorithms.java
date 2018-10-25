@@ -25,20 +25,20 @@ public class Algorithms {
 	public static double findTallest(List<Double> peeps) {
 		double tallest = 0;
 		for (int i = 0; i < peeps.size(); i++) {
-			
-				if (peeps.get(i) > tallest) {
-					tallest = peeps.get(i);
+
+			if (peeps.get(i) > tallest) {
+				tallest = peeps.get(i);
 			}
-					}
+		}
 		return tallest;
 	}
-	//need to fix next time 
+	// need to fix next time
 
 	public static Object findLongestWord(List<String> words) {
 		String longestWord = new String();
 		for (int i = 0; i < words.size(); i++) {
-				if (words.get(i).length() > longestWord.length()) {
-					longestWord = words.get(i);
+			if (words.get(i).length() > longestWord.length()) {
+				longestWord = words.get(i);
 			}
 		}
 		return longestWord;
@@ -46,20 +46,27 @@ public class Algorithms {
 
 	public static Object containsSOS(List<String> message1) {
 		for (int i = 0; i < message1.size(); i++) {
-			if(message1.get(i).contains("... --- ...")) {
+			if (message1.get(i).contains("... --- ...")) {
 				return true;
-		}
-			
+			}
+
 		}
 		return false;
 	}
 
 	public static List<String> sortScores(List<Double> results) {
 		double lowest = 0;
-		for (int i = 0; i < results.size(); i++) {
-			if (results.get(i) < lowest) {
-				lowest = results.get(i);
+		double[] tempOrder = new double[results.size()];
+
+		for (int j = 0; j < results.size(); j++) {
+
+			for (int i = j; i < results.size(); i++) {
+				if (results.get(i) < lowest && tempOrder.results.get(i)) {
+					lowest = results.get(i);
+					
+				}
 			}
+			tempOrder[j]=lowest;
 		}
 		return null;
 	}
