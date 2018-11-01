@@ -56,7 +56,7 @@ public class Algorithms {
 	}
 
 	public static List<double[]> sortScores(List<Double> results) {
-		double lowest = results.get(1);
+		double lowest = results.get(0);
 		double[] tempOrder = new double[results.size()];
 
 		for (int j = 0; j < results.size(); j++) {
@@ -66,7 +66,7 @@ public class Algorithms {
 					lowest = results.get(i);
 					
 				}
-//				tempOrder[j]=lowest;
+				tempOrder[j]=lowest;
 			}
 			
 		}
