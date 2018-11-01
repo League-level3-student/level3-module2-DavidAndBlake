@@ -1,5 +1,6 @@
 package _02_More_Algorithms;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Algorithms {
@@ -54,21 +55,25 @@ public class Algorithms {
 		return false;
 	}
 
-	public static List<String> sortScores(List<Double> results) {
-		double lowest = 0;
+	public static List<double[]> sortScores(List<Double> results) {
+		double lowest = results.get(1);
 		double[] tempOrder = new double[results.size()];
 
 		for (int j = 0; j < results.size(); j++) {
 
 			for (int i = j; i < results.size(); i++) {
-				if (results.get(i) < lowest && tempOrder.results.get(i)) {
+				if (results.get(i) < lowest) {
 					lowest = results.get(i);
 					
 				}
+//				tempOrder[j]=lowest;
 			}
-			tempOrder[j]=lowest;
+			
 		}
-		return null;
+		return Arrays.asList(tempOrder);
 	}
+	/*
+	 * Need to run through the list each time and compare 
+	*/		
 
 }
