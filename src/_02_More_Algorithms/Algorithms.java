@@ -55,25 +55,52 @@ public class Algorithms {
 		return false;
 	}
 
-	public static List<double[]> sortScores(List<Double> results) {
+	public static List<Double> sortScores(List<Double> results) {
 		double lowest = results.get(0);
-		double[] tempOrder = new double[results.size()];
 
 		for (int j = 0; j < results.size(); j++) {
 
-			for (int i = j; i < results.size(); i++) {
-				if (results.get(i) < lowest) {
+			for (int i = j+1; i < results.size(); i++) {
+				if (results.get(j) > results.get(i)) {
 					lowest = results.get(i);
-					
+					results.set(i, results.get(j));
+					results.set(j, lowest);
 				}
-				tempOrder[j]=lowest;
 			}
 			
 		}
-		return Arrays.asList(tempOrder);
+		return results;
 	}
 	/*
 	 * Need to run through the list each time and compare 
-	*/		
+	*/
+
+	public static Object sortDNA(List<String> unsortedSequences) {
+		String lowest = unsortedSequences.get(0);
+		for (int j = 0; j < unsortedSequences.size(); j++) {
+			for (int i = j+1; i < unsortedSequences.size(); i++) {
+				if (unsortedSequences.get(j).length() > unsortedSequences.get(i).length()) {
+					lowest = unsortedSequences.get(i);
+					unsortedSequences.set(i, unsortedSequences.get(j));
+					unsortedSequences.set(j, lowest);
+				}
+			}
+		}
+		return unsortedSequences;
+	}
+
+	public static List<String> sortWords(List<String> words) {
+		String last;
+		for (int j = 0; j < words.size(); j++) {
+			for (int i = j+1; i; i++) {
+				if (words.get(j).compareTo) {
+					last = words.get(i);
+					words.set(i, words.get(j));
+					words.set(j, last);
+				}
+			}
+		}
+		return null;
+	}		
 
 }
