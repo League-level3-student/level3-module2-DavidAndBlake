@@ -92,15 +92,16 @@ public class Algorithms {
 	public static List<String> sortWords(List<String> words) {
 		String last;
 		for (int j = 0; j < words.size(); j++) {
-			for (int i = j+1; i; i++) {
-				if (words.get(j).compareTo) {
+			for (int i = j+1; i < words.size(); i++) {
+				
+				if (words.get(i).compareTo(words.get(j)) < 0) {
 					last = words.get(i);
 					words.set(i, words.get(j));
 					words.set(j, last);
 				}
 			}
 		}
-		return null;
+		return words;
 	}		
 
 }
